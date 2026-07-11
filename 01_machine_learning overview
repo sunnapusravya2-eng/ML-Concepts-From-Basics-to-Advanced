@@ -1,0 +1,96 @@
+Machine learning (ML) is a branch of Artificial Intelligence that enables computers to learn patterns from data and improve their performance without being explicitly programmed for every task.
+
+Instead of writing detailed rules for every situation, you provide the computer with examples (data), and it learns how to make predictions or decisions.
+
+Simple example
+
+Imagine you want a computer to recognize cats in photos.
+
+Traditional programming: You would have to write rules such as "cats have pointy ears, whiskers, and four legs." This is difficult because cats vary in appearance.
+Machine learning: You show the computer thousands of labeled cat and non-cat images. It learns the patterns that distinguish cats from other objects.
+
+Machine Learning
+        |
+        |
+        ├── Supervised Learning
+        |       |
+        |       ├── Regression
+        |       └── Classification
+        |
+        ├── Unsupervised Learning
+        |       |
+        |       ├── Clustering
+        |       ├── Dimensionality Reduction
+        |       └── Association
+        |
+        └── Reinforcement Learning
+                |
+                ├── Agent
+                ├── Environment
+                ├── Action
+                └── Reward
+
+
+===========================
+        MACHINE LEARNING
+===========================
+
+Machine Learning
+│
+| |── 1. Supervised Learning
+│   │
+│   |├── Definition:
+│   │   Learns from labelled data (Input + Correct Output).
+│   │
+│   |├── Types
+│   │
+│   |├── A. Regression
+│   │   │Regression Types:
+│   │   ├── Linear Regression
+│   │   ├── Multiple Linear Regression
+│   │   ├── Polynomial Regression
+│   │   ├── Ridge Regression (L2 Regularization)
+│   │   ├── Lasso Regression (L1 Regularization)
+│   │    └── Elastic Net Regression (L1 + L2)
+│   │
+│   └── B. Classification
+│       │
+│       ├── Logistic Regression
+│       ├── Decision Tree
+│       ├── Random Forest
+│       ├── K-Nearest Neighbour (KNN)
+│       ├── Support Vector Machine (SVM)
+│        └── Naive Bayes
+│
+├── 2. Unsupervised Learning
+│   │
+│   |├── Definition:
+│   │   Learns from unlabelled data (No correct output is provided).
+│   │
+│   |├── Types
+│   │
+│   |├── A. Clustering
+│   │    │
+│   │   ├── K-Means Clustering
+│   │   ├── Hierarchical Clustering
+│   │    └── DBSCAN
+│   │
+│   └── B. Association
+│       │
+│       |── Apriori Algorithm
+│       └── Eclat Algorithm
+│
+└── 3. Reinforcement Learning
+     │
+    ├── Definition:
+     │   Learns by interacting with the environment
+     │   using rewards and penalties.
+     │
+    ├── Components
+     │
+    ├── Agent
+    ├── Environment
+    ├── Action
+    ├── Reward
+    ├── Penalty
+     └── Policy
