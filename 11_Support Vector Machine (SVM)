@@ -1,0 +1,178 @@
+						SUPPORT VECTOR MACHINE (SVM)
+
+Support Vector Machine (SVM) is a supervised machine learning algorithm used for both classification and regression tasks. It is mainly used for classification problems by finding the optimal hyperplane that best separates different classes in a dataset. The algorithm selects the hyperplane that maximizes the distance (margin) between the nearest data points of different classes, known as support vectors. SVM is highly effective for high-dimensional datasets and is widely used in image recognition, text classification, and medical diagnosis.
+
+Flowchart of Support Vector Machine (SVM)
+
+                 Support Vector Machine (SVM)
+                           │
+                           ▼
+                Collect Training Data
+                           │
+                           ▼
+                  Preprocess the Data
+                           │
+                           ▼
+            Select Features for Training
+                           │
+                           ▼
+             Find the Optimal Hyperplane
+                           │
+                           ▼
+              Identify Support Vectors
+                           │
+                           ▼
+          Classify New Data Using Hyperplane
+                           │
+                           ▼
+                   Final Prediction
+2. Types of SVM
+
+                 Support Vector Machine
+                           │
+            ┌──────────────┴──────────────┐
+            │                                                                  │
+            ▼                                                               ▼
+       Linear SVM                                       Nonlinear SVM
+
+Linear SVM:
+                  Linear SVM
+                      │
+                      ▼
+            Input Training Data
+                      │
+                      ▼
+        Check Linear Separability
+                      │
+                      ▼
+      Find Optimal Linear Hyperplane
+                      │
+                      ▼
+        Separate the Two Classes
+                      │
+                      ▼
+            Final Prediction
+
+Linear SVM is used when the dataset is linearly separable, meaning the classes can be separated by drawing a straight line (in two dimensions) or a flat plane (in higher dimensions). The algorithm identifies the optimal hyperplane that maximizes the margin between different classes. Linear SVM is computationally efficient and performs well on datasets with clear class boundaries.
+
+Examples
+	• Email Spam Detection 
+	• Pass / Fail Prediction 
+	• Disease Diagnosis 
+	• Loan Approval 
+
+Nonlinear SVM
+Nonlinear SVM is used when the dataset cannot be separated by a straight line or plane. It uses kernel functions to transform the data into a higher-dimensional space, where it becomes easier to separate the classes. Common kernels include the Polynomial Kernel, Radial Basis Function (RBF) Kernel, and Sigmoid Kernel. This allows SVM to solve complex classification problems.
+Flowchart
+
+                Nonlinear SVM
+                      │
+                      ▼
+            Input Training Data
+                      │
+                      ▼
+      Apply Kernel Transformation
+                      │
+                      ▼
+      Convert to Higher Dimensions
+                      │
+                      ▼
+        Find Optimal Hyperplane
+                      │
+                      ▼
+           Final Prediction
+Examples
+	• Face Recognition 
+	• Image Classification 
+	• Handwritten Digit Recognition 
+	• Speech Recognition 
+Important Components of SVM
+
+ Hyperplane
+A hyperplane is the decision boundary that separates different classes in an SVM model. In two-dimensional space, it is a straight line, while in higher dimensions it becomes a flat plane or surface. The objective of SVM is to find the hyperplane that best separates the classes with the maximum margin.
+Example
+Suppose we have two classes:
+	• Class A = Circles 
+	• Class B = Squares 
+A straight line separating the two classes is called the hyperplane.
+
+Support Vectors
+Definition
+Support vectors are the data points that lie closest to the hyperplane. These points are the most important observations because they determine the position and orientation of the hyperplane. If the support vectors change, the hyperplane also changes.
+Example
+In a spam detection dataset, the emails that are closest to the decision boundary become the support vectors.
+
+3.3 Margin
+Definition
+The margin is the distance between the hyperplane and the nearest support vectors from each class. SVM always tries to maximize this margin because a larger margin generally leads to better classification performance and improved generalization on unseen data.
+Example
+A larger gap between the two classes results in a more reliable classifier.
+
+4. Kernel Functions
+Kernel functions enable SVM to solve nonlinear classification problems by transforming the data into a higher-dimensional space.
+Types of Kernels
+Kernel	Description	Example
+Linear Kernel	Used for linearly separable data	Text Classification
+Polynomial Kernel	Creates curved decision boundaries	Image Classification
+RBF (Gaussian) Kernel	Most commonly used for nonlinear data	Face Recognition
+Sigmoid Kernel	Similar to neural network activation	Pattern Recognition
+
+Flowchart of Kernel-Based SVM
+
+                 Input Dataset
+                      │
+                      ▼
+              Apply Kernel Function
+                      │
+                      ▼
+         Transform Data to Higher Dimension
+                      │
+                      ▼
+          Find Optimal Hyperplane
+                      │
+                      ▼
+              Predict New Data
+
+5. Working of SVM
+Step 1: Collect the Dataset
+Prepare the labeled training dataset.
+Example
+Age	Income	Loan
+25	30000	Rejected
+35	60000	Approved
+45	80000	Approved
+
+Step 2: Select Features
+Choose the input features that will be used for classification.
+Example:
+	• Age 
+	• Income 
+
+Step 3: Find the Optimal Hyperplane
+The algorithm searches for the hyperplane that best separates the classes while maximizing the margin.
+
+Step 4: Identify Support Vectors
+The data points nearest to the hyperplane are selected as support vectors.
+
+Step 5: Classify New Data
+A new observation is placed on one side of the hyperplane, and the algorithm predicts its class.
+
+Example
+A bank wants to predict whether a loan should be approved.
+Training Data
+Credit Score	Loan Status
+720	Approved
+680	Approved
+520	Rejected
+490	Rejected
+New Customer
+	• Credit Score = 700 
+Since the score lies on the Approved side of the hyperplane,
+Prediction = Loan Approved
+
+Advantages
+	• High accuracy for classification tasks. 
+	• Effective for high-dimensional datasets. 
+	• Performs well with small and medium-sized datasets. 
+	• Resistant to overfitting due to maximum margin optimization. 
+	• Supports both linear and nonlinear classification.
