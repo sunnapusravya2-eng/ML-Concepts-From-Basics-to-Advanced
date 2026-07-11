@@ -1,0 +1,150 @@
+Random Forest 
+Random Forest is a supervised machine learning algorithm used for both classification and regression problems. It is an ensemble learning method, meaning it combines the predictions of multiple Decision Trees to improve accuracy and reduce overfitting. Instead of relying on a single tree, Random Forest creates many trees using random samples of the training data and combines their predictions. For classification problems, the final prediction is obtained through majority voting, while for regression problems, it uses the average of all predictions.
+
+Types of Random Forest
+
+                 Random Forest
+                      │
+          ┌───────────┴───────────┐
+          │                        │
+          ▼                        ▼
+Classification Random Forest   Regression Random Forest
+
+
+         Classification Random Forest
+                    │
+                    ▼
+          Input Training Data
+                    │
+                    ▼
+      Build Multiple Decision Trees
+                    │
+                    ▼
+      Each Tree Predicts a Class
+                    │
+                    ▼
+          Majority Voting
+                    │
+                    ▼
+          Final Class Prediction
+
+
+Advantages
+	• High prediction accuracy. 
+	• Reduces overfitting by combining multiple trees. 
+	• Works well with both numerical and categorical data. 
+	• Can handle large datasets efficiently. 
+	• Robust to noise and missing values. 
+	• Provides feature importance for model interpretation. 
+
+Disadvantages
+	• Training is slower than a single Decision Tree. 
+	• Requires more memory. 
+	• Difficult to interpret because it contains many trees. 
+	• Computationally expensive for very large forests. 
+
+Applications
+	• Medical diagnosis 
+	• Fraud detection 
+	• Credit scoring 
+	• Loan approval 
+	• Customer churn prediction 
+	• Recommendation systems 
+	• Stock market analysis 
+	• Image classification 
+	• Weather forecasting
+
+Working of Random Forest
+Random Forest works through the following steps:
+Step 1: Collect the Dataset
+The algorithm begins with a labeled training dataset.
+Example:
+Age	Income	Loan Approved
+25	30000	No
+35	60000	Yes
+40	80000	Yes
+
+Step 2: Bootstrap Sampling
+Random Forest creates several random datasets by selecting samples with replacement from the original dataset. This process is called Bootstrap Sampling.
+Example:
+Original Dataset:
+A B C D E
+Sample 1:
+A C C D E
+Sample 2:
+B B C D A
+Each sample is slightly different.
+
+Step 3: Random Feature Selection
+Instead of using all features, Random Forest randomly selects a subset of features for each decision tree.
+Example
+Features:
+	• Age 
+	• Income 
+	• Education 
+	• Experience 
+Tree 1 may use:
+	• Age 
+	• Income 
+Tree 2 may use:
+	• Income 
+	• Experience 
+Tree 3 may use:
+	• Age 
+	• Education 
+This randomness increases diversity among the trees.
+
+Step 4: Build Multiple Decision Trees
+Each bootstrap sample is used to train one Decision Tree.
+
+Dataset
+│
+ ├── Tree 1
+ ├── Tree 2
+ ├── Tree 3
+ ├── Tree 4
+  └── Tree 5
+
+Step 5: Prediction
+For a new observation, every tree predicts an output.
+Example
+Tree	Prediction
+Tree 1	Approved
+Tree 2	Approved
+Tree 3	Rejected
+Tree 4	Approved
+Tree 5	Approved
+
+Step 6: Final Decision
+Classification
+Majority Voting
+Approved = 4
+Rejected = 1
+Final Prediction = Approved
+Regression
+Predictions:
+250000
+260000
+255000
+Average
+= (250000 + 260000 + 255000) / 3
+= 255000
+Final Prediction = 255000
+
+Example
+Suppose a hospital wants to predict whether a patient has diabetes.
+Patient Details
+	• Age = 50 
+	• BMI = 32 
+	• Blood Sugar = 180 
+Five trees predict
+Tree	Prediction
+1	Positive
+2	Positive
+3	Negative
+4	Positive
+5	Positive
+Majority Voting
+Positive = 4
+Negative = 1
+Final Prediction = Diabetes Positive
