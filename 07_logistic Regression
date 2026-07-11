@@ -1,0 +1,49 @@
+Logistic Regression:  is a supervised machine learning classification algorithm used to predict the probability that an input belongs to a particular class. It is mainly used for binary classification problems, where the output has only two possible classes, such as Yes/No, Pass/Fail, or Spam/Not Spam.
+
+Real-Life Examples
+	• Email → Spam or Not Spam 
+	• Student → Pass or Fail 
+	• Loan → Approved or Rejected 
+	• Customer → Buy or Not Buy 
+	• Patient → Disease or No Disease
+             
+Logistic Regression
+| --Types of logistic Regression 
+|-- Binary Logistic Regression
+|      |-- Two classes
+|      |-- Pass/Fail
+|      |-- Yes/No
+|
+|-- Multinomial Logistic Regression
+|      |-- More than two classes
+|      |-- Apple
+|      |-- Orange
+|      |-- Banana
+|
+|-- Ordinal Logistic Regression
+       |-- Ordered classes
+       |-- Poor
+       |-- Fair
+       |-- Good
+       |-- Excellent
+
+1. Binary Logistic Regression :Binary Logistic Regression is used when the dependent (target) variable has only two possible classes. It predicts the probability that an observation belongs to one of the two classes by applying the sigmoid function. The output is usually represented as 0 or 1, Yes or No, or True or False. It is the most commonly used type of logistic regression in machine learning.
+Examples
+	• Pass / Fail 
+	• Spam / Not Spam 
+	• Disease / No Disease 
+	• Yes / No
+2.Multinomial Logistic Regression: is used when the target variable contains more than two classes, and these classes have no natural order. It estimates the probability of each class and assigns the class with the highest probability as the prediction. This type is useful for solving multi-class classification problems.
+Examples
+	• Fruit Classification (Apple, Orange, Banana) 
+	• Animal Classification (Dog, Cat, Horse) 
+	• Handwritten Digit Recognition (0–9) 
+	• Language Identification
+	
+3. Ordinal Logistic Regression: Ordinal Logistic Regression is used when the target variable has more than two classes that follow a meaningful order or ranking. Although the categories are ordered, the distance between them is not necessarily equal. This model predicts the probability that an observation belongs to each ordered category.
+	Examples
+		• Customer Satisfaction (Poor, Fair, Good, Excellent) 
+		• Education Level (High School, Undergraduate, Postgraduate, PhD) 
+		• Product Rating (1 Star, 2 Stars, 3 Stars, 4 Stars, 5 Stars) 
+		• Employee Performance (Low, Medium, High) 
+	
