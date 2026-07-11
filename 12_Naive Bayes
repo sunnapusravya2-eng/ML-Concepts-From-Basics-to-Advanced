@@ -1,0 +1,184 @@
+							Naive Bayes:
+
+Naive Bayes is a supervised classification algorithm based on Bayes' Theorem. It predicts the probability of a data point belonging to a class by assuming that the input features are independent. The four main types are Gaussian Naive Bayes (continuous data), Multinomial Naive Bayes (count data), Bernoulli Naive Bayes (binary data), and Complement Naive Bayes (imbalanced datasets). Due to its simplicity, speed, and effectiveness, Naive Bayes is widely used in spam filtering, sentiment analysis, document classification, and medical diagnosis.
+
+            Complement Naive Bayes
+                      │
+                      ▼
+          Input Imbalanced Dataset
+                      │
+                      ▼
+      Calculate Complement Statistics
+                      │
+                      ▼
+         Apply Bayes' Theorem
+                      │
+                      ▼
+          Final Class Prediction
+
+Types of Naïve Bayes 
+                     Naive Bayes
+                            │
+    ------------------|--------------------------------- 
+      │                 │        |                  │                      
+      ▼                 ▼       ▼                     ▼
+ Gaussian      Multinomial     Bernoulli     Complement
+ Naive Bayes    Naive Bayes    Naive Bayes   Naive Bayes
+
+Gaussian Naive Bayes
+Definition
+Gaussian Naive Bayes is used when the input features are continuous numerical values that follow a normal (Gaussian) distribution. It assumes that each feature is normally distributed within every class. This algorithm is widely used for datasets containing measurements such as height, weight, age, or temperature.
+Flowchart
+
+              Gaussian Naive Bayes
+                       │
+                       ▼
+             Input Continuous Data
+                       │
+                       ▼
+        Assume Normal Distribution
+                       │
+                       ▼
+      Calculate Mean and Variance
+                       │
+                       ▼
+        Apply Bayes' Theorem
+                       │
+                       ▼
+          Final Class Prediction
+Examples
+	• Disease Diagnosis 
+	• Weather Prediction 
+	• Blood Pressure Classification 
+	• Student Performance Prediction 
+
+3.2 Multinomial Naive Bayes
+Definition
+Multinomial Naive Bayes is used when the features represent frequency or count data. It is commonly applied in text classification, where the number of times a word appears in a document is important. The algorithm estimates the probability of a document belonging to a class based on word frequencies.
+Flowchart
+
+            Multinomial Naive Bayes
+                     │
+                     ▼
+              Input Count Data
+                     │
+                     ▼
+         Count Frequency of Features
+                     │
+                     ▼
+          Apply Bayes' Theorem
+                     │
+                     ▼
+          Final Class Prediction
+Examples
+	• Email Spam Detection 
+	• News Article Classification 
+	• Language Identification 
+	• Document Categorization 
+
+3.3 Bernoulli Naive Bayes
+Definition
+Bernoulli Naive Bayes is used when the input features are binary, meaning they can take only two possible values such as 0 or 1, Yes or No, or True or False. It focuses on whether a feature is present or absent rather than how many times it appears.
+Flowchart
+
+            Bernoulli Naive Bayes
+                     │
+                     ▼
+            Input Binary Features
+                     │
+                     ▼
+       Check Presence or Absence
+                     │
+                     ▼
+          Apply Bayes' Theorem
+                     │
+                     ▼
+          Final Class Prediction
+Examples
+	• Spam Detection (Word Present/Not Present) 
+	• Product Recommendation 
+	• Disease Detection (Symptom Present/Absent) 
+	• Fraud Detection 
+
+3.4 Complement Naive Bayes
+Definition
+Complement Naive Bayes is an improved version of Multinomial Naive Bayes designed to handle imbalanced datasets, where one class has significantly more samples than another. It calculates probabilities using the complement of each class, which often improves classification accuracy for minority classes.
+Flowchart
+
+            Complement Naive Bayes
+                      │
+                      ▼
+          Input Imbalanced Dataset
+                      │
+                      ▼
+      Calculate Complement Statistics
+                      │
+                      ▼
+         Apply Bayes' Theorem
+                      │
+                      ▼
+          Final Class Prediction
+Examples
+	• Fraud Detection 
+	• Medical Diagnosis 
+	• Rare Disease Prediction 
+	• Customer Churn Prediction 
+
+4. Working of Naive Bayes
+Step 1: Collect the Dataset
+Prepare the labelled training data.
+Example:
+Email	Class
+"Win Prize"	Spam
+"Meeting Today"	Not Spam
+"Free Offer"	Spam
+
+Step 2: Calculate Prior Probability
+Determine how often each class occurs.
+Example:
+Spam = 2/3
+Not Spam = 1/3
+
+Step 3: Calculate Likelihood
+Compute the probability of each feature occurring in each class.
+Example:
+P("Free"|Spam)
+
+Step 4: Apply Bayes' Theorem
+Calculate the posterior probability for each class.
+
+Step 5: Select the Highest Probability
+The class with the highest probability is chosen as the final prediction.
+
+Example
+Suppose an email contains the words:
+"Free Prize"
+The algorithm calculates:
+Probability of Spam = 0.92
+Probability of Not Spam = 0.08
+Since 0.92 > 0.08
+Prediction = Spam
+
+Advantages
+	• Simple and easy to implement. 
+	• Fast training and prediction. 
+	• Works well with high-dimensional data. 
+	• Effective for text classification tasks. 
+	• Requires less training data. 
+	• Handles multiclass classification naturally. 
+
+Disadvantages
+	• Assumes features are independent, which is not always true. 
+	• Performance decreases when features are highly correlated. 
+	• Zero-frequency problems may occur if smoothing is not used. 
+	• Less accurate than some advanced algorithms on complex datasets. 
+
+Applications
+	• Email Spam Filtering 
+	• Sentiment Analysis 
+	• Document Classification 
+	• News Categorization 
+	• Medical Diagnosis 
+	• Recommendation Systems 
+	• Fraud Detection 
+	• Language Detection
