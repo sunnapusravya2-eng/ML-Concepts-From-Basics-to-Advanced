@@ -1,0 +1,206 @@
+QUADRATIC DISCRIMINANT ANALYSIS (QDA)
+1. Introduction
+Quadratic Discriminant Analysis (QDA) is a supervised machine learning algorithm used mainly for classification problems. It is an extension of Linear Discriminant Analysis (LDA), but unlike LDA, QDA does not assume that all classes have the same covariance matrix. Instead, each class has its own covariance matrix, allowing the algorithm to create quadratic (curved) decision boundaries rather than straight lines. This makes QDA suitable for datasets where the relationship between features and classes is nonlinear.
+
+Flowchart of Quadratic Discriminant Analysis (QDA)
+
+            Quadratic Discriminant Analysis (QDA)
+                          │
+                          ▼
+                Collect Training Data
+                          │
+                          ▼
+                 Preprocess the Data
+                          │
+                          ▼
+          Calculate Mean of Each Class
+                          │
+                          ▼
+     Calculate Covariance Matrix for Each Class
+                          │
+                          ▼
+       Compute Quadratic Decision Boundary
+                          │
+                          ▼
+        Classify the New Data Point
+                          │
+                          ▼
+                  Final Prediction
+
+2. Types of QDA
+QDA is mainly applied in two types of classification problems.
+
+        Quadratic Discriminant Analysis (QDA)
+                        │
+          ┌─────────────┴─────────────┐
+          │                           │
+          ▼                           ▼
+ Binary Classification      Multi-class Classification
+
+2.1 Binary QDA
+Definition
+Binary Quadratic Discriminant Analysis is used when the dataset contains only two classes. It calculates separate covariance matrices for each class and creates a quadratic decision boundary to classify new observations. Binary QDA is useful when the two classes cannot be separated by a straight line.
+Flowchart
+
+                 Binary QDA
+                     │
+                     ▼
+           Input Training Data
+                     │
+                     ▼
+      Calculate Mean and Covariance
+                     │
+                     ▼
+     Generate Quadratic Boundary
+                     │
+                     ▼
+        Predict the New Class
+                     │
+                     ▼
+          Final Prediction
+Examples
+	• Fraud or Not Fraud 
+	• Disease Positive or Negative 
+	• Loan Approved or Rejected 
+	• Spam or Not Spam 
+
+2.2 Multi-class QDA
+Definition
+Multi-class Quadratic Discriminant Analysis is used when there are more than two classes. The algorithm estimates a separate covariance matrix for each class and computes multiple quadratic decision boundaries. It assigns a new observation to the class with the highest probability.
+Flowchart
+
+              Multi-class QDA
+                    │
+                    ▼
+          Input Training Data
+                    │
+                    ▼
+     Calculate Mean of Each Class
+                    │
+                    ▼
+ Calculate Separate Covariance Matrices
+                    │
+                    ▼
+   Create Quadratic Decision Boundaries
+                    │
+                    ▼
+         Predict the Class Label
+                    │
+                    ▼
+          Final Prediction
+Examples
+	• Flower Species Classification 
+	• Face Recognition 
+	• Animal Classification 
+	• Medical Diagnosis 
+
+3. Working of QDA
+Step 1: Collect the Dataset
+Prepare the labeled dataset.
+Example
+Height	Weight	Class
+160	55	Class A
+170	70	Class B
+180	85	Class C
+
+Step 2: Calculate the Mean of Each Class
+Find the average value of each feature for every class.
+Example
+Mean of Class A = 162
+Mean of Class B = 171
+Mean of Class C = 181
+
+Step 3: Calculate Covariance Matrix
+Unlike LDA, QDA calculates a separate covariance matrix for each class.
+Example
+	• Covariance of Class A 
+	• Covariance of Class B 
+	• Covariance of Class C 
+This allows each class to have a different shape and spread.
+
+Step 4: Compute Quadratic Decision Boundary
+Using the class means and covariance matrices, QDA creates curved (quadratic) boundaries that better separate nonlinear classes.
+
+Step 5: Calculate Posterior Probability
+The probability of the new observation belonging to each class is calculated.
+
+Step 6: Assign the Final Class
+The class with the highest posterior probability is selected as the prediction.
+
+Mathematical Formula
+The discriminant function used in QDA is:
+
+δ_k (x)=−1/2  ln⁡∣ Σ_k∣−1/2 (x−μ_k )^T Σ_k^(−1) (x−μ_k )+ln⁡(π_k )
+ 
+Where:
+	• μₖ = Mean vector of class k 
+	• Σₖ = Covariance matrix of class k 
+	• πₖ = Prior probability of class k 
+	• x = Input feature vector 
+
+Example
+Suppose a hospital wants to classify patients into:
+	• Healthy 
+	• Diabetes 
+	• Heart Disease 
+Input Features
+	• Age = 50 
+	• Blood Pressure = 150 
+	• Cholesterol = 240 
+Since the classes have different distributions, QDA creates curved decision boundaries and predicts:
+Prediction = Heart Disease
+
+Advantages
+	• Handles nonlinear class boundaries effectively. 
+	• More flexible than LDA. 
+	• Uses separate covariance matrices for each class. 
+	• Produces high accuracy when class distributions differ. 
+	• Suitable for complex classification problems. 
+
+Disadvantages
+	• Requires more training data than LDA. 
+	• More computationally expensive. 
+	• Sensitive to outliers. 
+	• May overfit small datasets. 
+	• Assumes each class follows a Gaussian (normal) distribution. 
+
+Applications
+	• Medical Diagnosis 
+	• Face Recognition 
+	• Image Classification 
+	• Financial Risk Analysis 
+	• Speech Recognition 
+	• Bioinformatics 
+	• Pattern Recognition 
+	• Customer Segmentation 
+
+Binary QDA vs Multi-class QDA
+Feature	Binary QDA	Multi-class QDA
+Number of Classes	Two	More than Two
+Covariance Matrices	One per class	One per class
+Decision Boundary	Quadratic	Multiple Quadratic Boundaries
+Example	Spam Detection	Flower Species Classification
+
+LDA vs QDA
+Feature	LDA	QDA
+Learning Type	Supervised	Supervised
+Covariance Matrix	Same for all classes	Different for each class
+Decision Boundary	Linear	Quadratic (Curved)
+Flexibility	Lower	Higher
+Risk of Overfitting	Lower	Higher
+Training Data Required	Less	More
+Best Used For	Linear datasets	Nonlinear datasets
+
+QDA vs Logistic Regression
+Feature	QDA	Logistic Regression
+Decision Boundary	Quadratic	Linear
+Data Assumption	Gaussian distribution	No Gaussian assumption
+Classification	Binary and Multi-class	Binary and Multi-class
+Complexity	Higher	Lower
+Best For	Nonlinear data	Linearly separable data
+
+Summary
+Quadratic Discriminant Analysis (QDA) is a supervised machine learning classification algorithm that extends Linear Discriminant Analysis (LDA) by allowing each class to have its own covariance matrix. This enables QDA to create quadratic (curved) decision boundaries, making it more suitable for datasets with nonlinear class separation. QDA can be applied to both binary and multi-class classification problems. Although it requires more training data and computational resources than LDA, it often achieves higher accuracy when class distributions differ significantly. It is widely used in medical diagnosis, image recognition, finance, bioinformatics, and speech recognition.
+
+
+
