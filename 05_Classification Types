@@ -1,0 +1,111 @@
+Classification: Classification is a supervised learning technique used to predict categorical outputs. The model learns from labeled data and assigns new data to one of the predefined classes. It is commonly used in applications such as spam detection, fraud detection, and disease prediction.
+
+How Classification Works
+
+             Training Data
+(Input Features + Class Labels)
+               │
+               ▼
+         Train the Model
+               │
+               ▼
+      Learn Classification Rules
+               │
+               ▼
+       Predict New Class Label
+
+Real-Life Example
+Email Spam Detection
+Email Text	Output
+Win ₹10 lakh now!	Spam
+Meeting at 3 PM	Not Spam
+Claim your prize	Spam
+
+Types of Classification
+There are four main types of classification.
+
+Classification
+ │
+├── 1. Binary Classification
+├── 2. Multi-Class Classification
+├── 3. Multi-Label Classification
+ └── 4. Imbalanced Classification
+
+1. Binary Classification
+Definition
+Binary Classification predicts one of two possible classes. Each input belongs to only one of the two categories.
+Example
+Email Spam Detection
+Email	Output
+Win Money	Spam
+Office Meeting	Not Spam
+Possible Outputs:
+	• Yes / No 
+	• Pass / Fail 
+	• True / False 
+	• Fraud / Not Fraud 
+Applications
+	• Spam Detection 
+	• Disease Detection 
+	• Loan Approval 
+	• Fraud Detection 
+
+2. Multi-Class Classification
+Definition
+Multi-Class Classification predicts one class from three or more possible categories. Each input belongs to only one class.
+Example
+Animal Classification
+Image	Output
+🐶	Dog
+🐱	Cat
+🐦	Bird
+Possible Classes:
+	• Dog 
+	• Cat 
+	• Bird 
+	• Horse 
+The model predicts only one class.
+Applications
+	• Handwritten Digit Recognition (0–9) 
+	• Animal Classification 
+	• Fruit Classification 
+	• Language Identification 
+
+3. Multi-Label Classification
+Definition
+Multi-Label Classification allows a single input to belong to multiple classes at the same time.
+Example
+Movie Genres
+Movie	Output
+Avengers	Action, Adventure, Sci-Fi
+A movie can belong to several genres simultaneously.
+Applications
+	• Image Tagging 
+	• News Categorization 
+	• Music Genre Classification 
+	• Document Tagging 
+
+4. Imbalanced Classification
+Definition
+Imbalanced Classification occurs when one class has many more examples than the other class. The model needs special techniques to learn both classes effectively.
+Example
+Credit Card Fraud Detection
+Transactions	Count
+Normal	99,000
+Fraud	1,000
+The model must learn to detect the rare fraud cases.
+Applications
+	• Fraud Detection 
+	• Disease Diagnosis 
+	• Cybersecurity 
+	• Insurance Claim Detection 
+
+Common Classification Algorithms
+Algorithm	Used For
+Logistic Regression	Binary Classification
+Decision Tree	Binary & Multi-Class
+Random Forest	Binary & Multi-Class
+K-Nearest Neighbors (KNN)	Classification
+Support Vector Machine (SVM)	Binary & Multi-Class
+Naive Bayes	Text Classification & Spam Detection
+
