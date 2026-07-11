@@ -1,0 +1,68 @@
+						Decision Tree
+	
+	                          Decision Tree
+                                │
+        ┌───────────────────────┼───────────────────────┐
+        │                       │                       │                                                        
+        ▼                       ▼                       ▼                                                    
+ Classification Tree      Regression Tree      Hybrid Decision Tree
+	
+	Structure of a Decision Tree
+	
+	                    Root Node
+                        │
+                 Is Age > 30?
+                 /          \
+               Yes          No
+              /              \
+      Income > 50K?      Student?
+        /      \          /      \
+      Yes      No      Yes       No
+      │         │        │         │
+ Approved   Rejected  Approved  Rejected
+	
+A Decision Tree is a supervised machine learning algorithm used for both classification and regression tasks. It predicts the output by splitting the dataset into smaller subsets based on feature values, forming a tree-like structure of decisions. Each split is made using the feature that best separates the data, and the process continues until a final prediction is reached at a leaf node. Decision Trees are popular because they are simple to understand, easy to interpret, and closely resemble human decision-making.
+
+Advantages
+	• Simple and easy to understand. 
+	• Can handle both numerical and categorical data. 
+	• No need for feature scaling or normalization. 
+	• Easy to visualize and interpret. 
+	• Works for both classification and regression problems. 
+
+Applications
+	• Loan approval systems 
+	• Medical diagnosis 
+	• Fraud detection 
+	• Customer segmentation 
+	• Employee performance evaluation 
+	• Credit risk analysis 
+	• Marketing and sales prediction
+
+1. Classification Tree
+A Classification Tree is a type of decision tree used when the target variable is categorical. It divides the dataset into different branches based on feature values until each leaf node represents a class label. The goal is to correctly classify new observations into predefined categories. Classification trees commonly use measures such as Gini Index or Entropy (Information Gain) to determine the best split.
+Examples
+	• Spam or Not Spam 
+	• Pass or Fail 
+	• Disease Positive or Negative 
+	• Loan Approved or Rejected 
+
+2. Regression Tree
+A Regression Tree is used when the target variable is continuous or numerical. Instead of predicting a class label, it predicts a numeric value by splitting the data into smaller regions and assigning the average value of the observations in each region. Regression trees commonly use Mean Squared Error (MSE) or Variance Reduction to determine the best split.
+Examples
+	• House Price Prediction 
+	• Temperature Prediction 
+	• Sales Forecasting 
+	• Salary Prediction 
+
+3. Hybrid Decision Tree
+A Hybrid Decision Tree combines decision trees with other machine learning techniques or ensemble methods to improve prediction accuracy and reduce overfitting. It can handle both classification and regression tasks depending on the application. Hybrid decision trees are commonly used in advanced systems such as Random Forest and Gradient Boosting.
+Examples
+	• Fraud Detection 
+	• Medical Diagnosis 
+	• Customer Churn Prediction 
+	• Stock Market Prediction 
+Summary
+	• Classification Tree predicts categorical class labels such as Yes/No or Pass/Fail. 
+	• Regression Tree predicts continuous numerical values such as prices or temperatures. 
+	• Hybrid Decision Tree combines decision trees with other machine learning techniques to improve performance and is widely used in modern ensemble methods. 
