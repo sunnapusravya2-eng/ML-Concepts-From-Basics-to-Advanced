@@ -1,0 +1,28 @@
+							Classification
+							      |---algorithm of classification 
+							      |
+							      |├── Linear Models
+							      |       └── Logistic Regression
+							      |
+							      |├── Distance Based
+							      |       └── KNN
+							      |
+							      |├── Tree Based
+							      |       ├── Decision Tree
+							      |       ├── Random Forest
+							      |        └── XGBoost
+							      |
+							      |├── Margin Based
+							      |       └── SVM
+							      |
+							      |├── Probabilistic
+							      |       ├── Naive Bayes
+							      |       ├── LDA
+							      |        └── QDA
+							      |
+							      └── Neural Network Based
+							              ├── ANN
+							              ├── CNN
+							               └── RNN
+
+
