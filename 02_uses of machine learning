@@ -1,0 +1,118 @@
+
+Machine Learning is used in many real-world applications.
+1. Email Spam Detection
+Application:
+Automatically identifies spam emails.
+Example:
+	• "You won ₹10 lakh!" → Spam 
+	• "Meeting at 10 AM" → Not Spam 
+Algorithm Used:
+	• Classification 
+
+2. Recommendation Systems
+Application:
+Recommends products, movies, or songs based on user preferences.
+Examples:
+	• Netflix recommends movies. 
+	• Amazon recommends products. 
+	• YouTube recommends videos. 
+Algorithm Used:
+	• Recommendation algorithms 
+	• Classification 
+
+3. House Price Prediction
+Application:
+Predicts the price of a house based on:
+	• Size 
+	• Location 
+	• Number of bedrooms 
+	• Age of the house 
+Algorithm Used:
+	• Regression 
+
+4. Medical Diagnosis
+Application:
+Helps doctors detect diseases.
+Examples:
+	• Diabetes prediction 
+	• Heart disease prediction 
+	• Cancer detection 
+Algorithm Used:
+	• Classification 
+
+5. Fraud Detection
+Application:
+Detects fraudulent banking or credit card transactions.
+Example:
+If a transaction looks unusual, the system flags it for review.
+Algorithm Used:
+	• Classification 
+
+6. Face Recognition
+Application:
+Recognizes people's faces.
+Examples:
+	• Phone face unlock 
+	• Office attendance systems 
+Algorithm Used:
+	• Deep Learning 
+
+7. Voice Assistants
+Application:
+Understands voice commands.
+Examples:
+	• Google Assistant 
+	• Siri 
+	• Alexa 
+Algorithm Used:
+	• NLP 
+	• Deep Learning 
+
+8. Self-Driving Cars
+Application:
+Detects roads, traffic signs, vehicles, and pedestrians to assist autonomous driving.
+Algorithm Used:
+	• Computer Vision 
+	• Deep Learning 
+
+9. Customer Churn Prediction
+Application:
+Predicts which customers are likely to stop using a service.
+Examples:
+	• Telecom companies 
+	• Banks 
+	• Subscription services 
+Algorithm Used:
+	• Classification 
+
+10. Sentiment Analysis
+Application:
+Determines whether text expresses a positive, negative, or neutral opinion.
+Examples:
+	• Product reviews 
+	• Social media comments 
+	• Customer feedback 
+Algorithm Used:
+	• NLP 
+
+11. Weather Forecasting
+Application:
+Predicts weather conditions.
+Examples:
+	• Rain prediction 
+	• Temperature forecasting 
+Algorithm Used:
+	• Regression 
+	• Time Series 
+
+12. Chatbots
+Application:
+Answers customer questions automatically.
+Examples:
+	• Customer support bots 
+	• Banking assistants 
+	• AI-powered document assistants 
+Algorithm Used:
+	• NLP 
+	• Large Language Models (LLMs) 
+	• RAG (for document-based chatbots)
