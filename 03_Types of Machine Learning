@@ -1,0 +1,82 @@
+Types of Machine Learning
+
+                Machine Learning
+                      │
+    -------------------------------------------------
+     │                   |                           |                                          
+     ▼                   ▼                           ▼                                     
+Supervised          Unsupervised               Reinforcement
+ Learning              Learning                   Learning
+
+How Supervised Learning Works
+
+          Labeled Data
+ (Input + Correct Output)
+               │
+               ▼
+        Train the Model
+               │
+               ▼
+      Model Learns Patterns
+               │
+               ▼
+      Predict New Data
+
+
+Supervised Learning is a machine learning technique where the model learns from labeled data. It is trained using input data along with the correct answers, so it can predict the output for new, unseen data.
+
+							Types of supervised Learning 
+										1.Regression
+										2.Classification 
+
+
+                 Machine Learning
+                        |
+        ┌───────────────┼───────────────┐
+        |               |               |
+        ▼               ▼               ▼
+
+   Supervised      Unsupervised    Reinforcement
+   (Teacher)       (No Teacher)    (Reward Based)
+
+   ↓               ↓               ↓
+
+ Predict          Discover        Learn by
+ Output           Patterns        Experience
+
+
+Supervised Learning: Email Spam Detection, House Price Prediction
+Unsupervised Learning: Customer Segmentation, Market Basket Analysis
+Reinforcement Learning: Self-driving cars, Game-playing AI
+
+
+1.Regression:
+Regression is a machine learning techniques used to predict the continuous numerical values. 
+Example: salary prediction, Prizes, discounts etc…
+How Regression Works
+
+Training Data
+(Input + Numerical Output)                        
+          ↓
+Train the Regression Model
+          ↓
+Model Learns Relationship
+          ↓
+New Input
+          ↓
+Predict Numerical Value
+
+2.                 Classification
+                       |
+     ┌─────────────────┼─────────────────┐
+     |                 |                 |
+     ▼                 ▼                 ▼
+
+ Binary          Multi-Class       Multi-Label
+Classification   Classification    Classification
+
+     |                 |                 |
+     ▼                 ▼                 ▼
+
+Spam/Not Spam    Cat/Dog/Bird     Movie Tags
+Disease/Normal   A/B/C/D          Action + Comedy
