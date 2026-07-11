@@ -1,0 +1,107 @@
+			K-Nearest Neighbours (KNN)
+
+K-Nearest Neighbors (KNN) is a supervised machine learning algorithm used for both classification and regression tasks. It predicts the output of a new data point by comparing it with the K nearest data points (neighbors) in the training dataset. KNN is called a lazy learning algorithm because it does not build a model during training; instead, it stores the training data and performs calculations only when a prediction is required. The prediction is based on the similarity or distance between data points.
+                  K-Nearest Neighbors (KNN)
+                           │
+       --------------------------------------------------
+        │                  |                             |                                                    
+        ▼                  ▼                              ▼
+ Classification KNN      Regression KNN               Weighted KNN
+
+
+Advantages
+	• Simple and easy to understand. 
+	• No training phase (lazy learning). 
+	• Effective for small datasets. 
+	• Handles multiclass classification naturally. 
+	• Can be used for both classification and regression. 
+
+Disadvantages
+	• Prediction is slow for large datasets. 
+	• Requires feature scaling. 
+	• Sensitive to noisy data and outliers. 
+	• Choosing the correct value of K is important. 
+	• Uses more memory because all training data is stored. 
+
+Applications
+	• Recommendation Systems 
+	• Image Recognition 
+	• Medical Diagnosis 
+	• Pattern Recognition 
+	• Credit Risk Analysis 
+	• Customer Segmentation 
+	• Handwritten Digit Recognition 
+	• Fraud Detection
+	
+1.Classification KNN:
+Classification KNN is used when the target variable is categorical. The algorithm identifies the K nearest neighbors of a new data point and assigns the class that appears most frequently among those neighbors. This method is called majority voting. Classification KNN is simple, effective, and widely used for solving binary and multiclass classification problems.
+
+Example
+Suppose K = 5
+Nearest Neighbors:
+	• Apple 
+	• Apple 
+	• Orange 
+	• Apple 
+	• Orange 
+Majority Class = Apple
+Prediction = Apple
+
+2.Regression KNN: Regression KNN is used when the target variable is numerical or continuous. Instead of selecting the majority class, the algorithm calculates the average of the values of the K nearest neighbors. The average becomes the predicted value for the new observation. Regression KNN is commonly used in forecasting and prediction problems.
+
+ Regression of knn workflow :
+               Regression KNN
+                     │
+                     ▼
+            Input Training Data
+                     │
+                     ▼
+            Choose Value of K
+                     │
+                     ▼
+          Find K Nearest Neighbors
+                     │
+                     ▼
+        Calculate Average Value
+                     │
+                     ▼
+        Final Numeric Prediction
+
+Example
+House Prices
+House	Price
+A	₹20 Lakhs
+B	₹22 Lakhs
+C	₹24 Lakhs
+Average
+= (20 + 22 + 24) / 3
+= ₹22 Lakhs
+
+3.Weighted KNN: Weighted KNN is an improved version of the KNN algorithm where closer neighbors are given more importance than farther neighbors. Each neighbor is assigned a weight based on its distance from the new data point. Neighbors that are closer contribute more to the final prediction, improving accuracy, especially when neighbor distances vary significantly.
+
+Flowchart of Weighted KNN
+
+                 Weighted KNN
+                      │
+                      ▼
+           Collect Training Data
+                      │
+                      ▼
+            Choose the Value of K
+                      │
+                      ▼
+      Calculate Distance to All Neighbors
+                      │
+                      ▼
+        Select K Nearest Neighbors
+                      │
+                      ▼
+     Assign Weight Based on Distance
+                      │
+                      ▼
+    Weighted Voting / Weighted Average
+                      │
+                      ▼
+             Final Prediction
+
+Weighted KNN is widely used in classification and regression tasks where more reliable predictions are required.
