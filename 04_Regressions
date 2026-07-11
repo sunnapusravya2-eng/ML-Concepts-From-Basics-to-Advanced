@@ -1,0 +1,82 @@
+1.Regression:
+Regression is a machine learning techniques used to predict the continuous numerical values. 
+Example: salary prediction, Prizes, discounts etc…
+How Regression Works
+
+Training Data
+(Input + Numerical Output)                        
+          ↓
+Train the Regression Model
+          ↓
+Model Learns Relationship
+          ↓
+New Input
+          ↓
+Predict Numerical Value
+
+	(Real-Life Example 2: Salary Prediction
+	Experience	Salary
+	1 year	₹4 LPA
+	2 years	₹6 LPA
+	3 years	₹8 LPA
+	New employee:
+	Experience = 2.5 years
+	Prediction:
+	Salary ≈ ₹7 LPA)
+	
+
+Regression is a type of supervised learning used to predict continuous numerical values. It learns the relationship between input features and a numerical target variable, then uses that relationship to predict values for new data.
+										  Types of Regressions:
+Regression
+ │
+├── 1. Linear Regression
+├── 2. Multiple Linear Regression
+├── 3. Polynomial Regression
+├── 4. Ridge Regression
+├── 5. Lasso Regression
+ └── 6. Elastic Net Regression
+
+1.Linear Regression:    predicts a continuous value by understand the  relationship between the input and the output.  
+When to Use
+	• House Price Prediction 
+	• Salary Prediction 
+	• Sales Prediction
+	
+2. Multiple Linear Regression:  Multiple Linear Regression predicts the output using more than one input feature.  It is an extension of Linear Regression.
+When to Use
+	• House price prediction with multiple features 
+	• Employee salary prediction 
+	• Medical cost prediction
+	
+3. Polynomial Regression: is used when the relationship between the input and output  It is useful for non-linear relationships.
+Applications
+	• Population growth 
+	• Temperature prediction 
+	• Stock trend analysis (in some cases) 
+	
+4. Ridge Regression(L2):  version of Linear Regression that uses L2 Regularization.
+Example
+A house price dataset contains many related features such as:
+	• Area 
+	• Number of rooms 
+	• Floor area 
+	• Balcony size 
+Ridge Regression reduces overfitting while still using all these features.
+
+5. Lasso Regression(L1): Lasso Regression automatically removes the unnecessary 35 features and builds a simpler model. It reduces overfitting and automatically removes less important features by making some coefficients exactly zero.
+ 
+Why Use Lasso Regression?
+Suppose you have 100 features.
+Not all of them are useful.
+Lasso helps by:
+	• Removing unnecessary features. 
+	• Making the model simpler. 
+	• Reducing overfitting. 
+	• Improving prediction on new data. 
+	
+6. Elastic Net Regression: Elastic Net Regression combines both L1 (Lasso) and L2 (Ridge) regularization. It reduces overfitting while also selecting important features. It works well when many input features are correlated. 
+ → Overfitting = Memorization, not Understanding
+
+• L1 = Feature Selection (removes some features). 
+• L2 = Coefficient Shrinking (keeps all features but reduces their impact). 
+• Elastic Net = Combination of L1 and L2.
